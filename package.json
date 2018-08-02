@@ -1,0 +1,44 @@
+{
+  "name": "d3-v4-contextmenu-demo",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write 'src/**/*.js'",
+    "debug": "webpack-dev-server --progress --colors --hot --open",
+    "precommit": "lint-staged",
+    "postcommit": "git reset"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "none",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "author": "atago0129",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.11",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.14.0",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "dependencies": {
+    "@atago0129/d3-v4-contextmenu": "git://github.com/atago0129/d3-v4-contextmenu.git",
+    "d3": "^4.13.0"
+  }
+}

@@ -1,0 +1,33 @@
+<html>
+<head>
+	<style>
+
+		.node circle {
+			fill: #fff;
+			stroke: steelblue;
+			stroke-width: 3px;
+		}
+
+		.node text {
+			font: 12px sans-serif;
+		}
+
+		.link {
+			fill: none;
+			stroke: #ccc;
+			stroke-width: 2px;
+		}
+
+	</style>
+</head>
+<body>
+	<script src="/dist/demo.min.js"></script>
+	<script>
+		var diagram = new window.D3V4ContextMenuDemo.default();
+		diagram.execute();
+	</script>
+	<p>name: <span id="name-text"></span></p>
+	<p>children: <span id="children-text"></span></p>
+	<p>index: <span id="index-text"></span></p>
+</body>
+</html>
